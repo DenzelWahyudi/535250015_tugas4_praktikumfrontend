@@ -1,0 +1,79 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+}
+
+.info h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.field input,
+.field textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+.btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
